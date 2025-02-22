@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="My Client Detector">
+        <link rel="icon" href="./assets/" type="image/png">
+        <title>Client Detection</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="./assets/style/main.css">
+        <script src="./assets/script/app.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <section>
+                    <div class="box">
+                        <div class="box-name">
+                            <p>System</p>
+                        </div>
+                        <div class="box-content">
+                            <p>OS: <span class="os"></span></p>
+                            <p>Language: <span class="language"></span></p>
+                            <p>Browser: <span class="browser"></span></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-name">
+                            <p>Window</p>
+                        </div>
+                        <div class="box-content">
+                            <p>Width: <span class="width"></span></p>
+                            <p>Height: <span class="height"></span></p>
+                            <p>Orientation: <span class="orientation"></span></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-name">
+                            <p>Battery</p>
+                        </div>
+                        <div class="box-content">
+                            <p>Level: <span class="level"></span></p>
+                            <p>Status: <span class="status"></span></p>
+                        </div>
+                    </div>
+                    <button class="network-status">
+                        <p><span class="online/offline"></span></p>
+                    </button>
+                </section>
+        </main>
+    </body>
+</html>

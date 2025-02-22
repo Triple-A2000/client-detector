@@ -1,0 +1,109 @@
+@import url(./reset.css);
+
+:root {
+    --app-bg-dark: #181724;
+    --app-black: #000;
+    --app-bg-light: #f2f2f2;
+    --app-grey: #dddddd;
+    --app-white: #fff;
+    --app-light-green: #44b344;
+    --app-light-orange: #db8f2b;
+    --app-box-bg-light: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    font-family: "Inter", "Open Sans", Arial, sans-serif;
+    background-color: var(--app-bg-dark);
+    color: var(--app-white);
+    transition: background-color 0.25s ease-in-out;
+}
+.container {
+    width: min(100% - 30px, 1000px);
+    margin-inline: auto;
+}
+
+/*--------------------------*/
+/* Section                  */
+/*--------------------------*/
+
+section {
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*--------------------------*/
+/* Box                      */
+/*--------------------------*/
+
+.box {
+    width: 300px;
+    height: auto;
+}
+
+/*--------------------------*/
+/* Box-name                 */
+/*--------------------------*/
+
+.box-name {
+    height: 40px;
+    background-color: var(--app-box-bg-light);
+    padding: 0 5px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-name p {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*--------------------------*/
+/* Box-content              */
+/*--------------------------*/
+
+.box-content {
+    border: 1px solid var(--app-box-bg-light);
+    border-radius: 0 0 8px 8px;
+    padding: 10px;
+}
+
+.box-content p {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.box-content p + p {
+    margin-top: 4px;
+}
+
+/*--------------------------*/
+/* Button                   */
+/*--------------------------*/
+
+button {
+    width: 300px;
+    height: auto;
+    padding: 12px 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: var(--app-light-green);
+    color: var(--app-white);
+    border: none;
+    cursor: pointer;
+}
+
+.online {
+    background-color: var(--app-light-green);
+}
+
+.offline {
+    background-color: var(--app-light-orange);
+}
